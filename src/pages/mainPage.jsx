@@ -2,15 +2,21 @@ import { useState, useRef, useEffect } from "react";
 
 function MainPage({changeView}) {
   const messages = [
-    "Hi",
+    "We aren't done",
+    "Also",
     "Ms.",
     "Sharon",
     "Zhang",
     "It is only right that I ask",
     "Will",
     "You",
+    "Make",
+    "Me",
+    "The happiest man alive and",
     "Be",
     "My",
+    "One",
+    "and only",
     "Valentine",
     "?",
   ];
@@ -74,7 +80,7 @@ function MainPage({changeView}) {
           </button>
         </div>
       )}
-      {message < messages.length -1 && <h2 className="bounce">Click on Text to Continue</h2>}
+      {/* {message < messages.length -1 && <h2 className="bounce">Click on Text to Continue</h2>} */}
       {numOfTimesClicked==3 &&<h2>You don't have a choice!</h2>}
     </>
   );
